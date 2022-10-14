@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "0hW-KL-hDk"; */
+"0hW-KL-hDk.text" = "Welcome";
+
+/* Class = "UIButton"; configuration.title = "Continue"; ObjectID = "3Pt-3A-Cmb"; */
+"3Pt-3A-Cmb.configuration.title" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "3Pt-3A-Cmb"; */
+"3Pt-3A-Cmb.normalTitle" = "Button";

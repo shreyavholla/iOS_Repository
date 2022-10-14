@@ -1,0 +1,7 @@
+
+platform :ios, '15.0'
+use_frameworks!
+
+target 'TempCheck - The Weather App' do
+    pod 'Alamofire', '~> 4.0'
+end

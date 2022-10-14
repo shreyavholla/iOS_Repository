@@ -1,0 +1,10 @@
+/* 
+  MyStrings.strings
+  LocalizationDemo
+
+  Created by admin on 26/09/22.
+  
+*/
+"success_title" = "सफलता";
+"login_message" = "कृपया भेजे गए ओटीपी के साथ लॉगिन करें";
+"button_title" = "ठीक";

@@ -1,0 +1,12 @@
+/* 
+  MyStrings.strings
+  LocalizationDemo
+
+  Created by admin on 26/09/22.
+  
+*/
+
+//key is a string
+"success_title" = "성공";
+"login_message" = "OTP가 전송된 상태로 로그인하세요.";
+"button_title" = "좋아요";

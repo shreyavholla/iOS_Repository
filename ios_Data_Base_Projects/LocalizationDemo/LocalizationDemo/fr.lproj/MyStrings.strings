@@ -1,0 +1,11 @@
+/* 
+  MyStrings.strings
+  LocalizationDemo
+
+  Created by admin on 26/09/22.
+  
+*/
+
+"success_title" = "Succès";
+"login_message" = "Veuillez vous connecter avec OTP envoyé";
+"button_title" = "D'accord";

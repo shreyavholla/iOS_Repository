@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JNq-pN-lpj">
+                                <rect key="frame" x="20" y="127.00000000000003" width="350" height="338.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Based Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQr-Y1-4JQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihs-7a-DCT">
+                                        <rect key="frame" x="0.0" y="45.333333333333343" width="350" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeS-LR-hqX">
+                                        <rect key="frame" x="0.0" y="87" width="350" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start Tracking"/>
+                                        <connections>
+                                            <action selector="startTracking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSr-x2-akI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXf-xb-Mfu">
+                                        <rect key="frame" x="0.0" y="141.33333333333331" width="350" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Stop Tracking"/>
+                                        <connections>
+                                            <action selector="stopTracking:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v1q-gi-Y6V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAK-Vb-uYc">
+                                        <rect key="frame" x="0.0" y="195.66666666666669" width="350" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Address"/>
+                                        <connections>
+                                            <action selector="showAddress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzY-v3-Hrz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZY-Uv-aTE">
+                                        <rect key="frame" x="0.0" y="250.00000000000003" width="350" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Geo Coder"/>
+                                        <connections>
+                                            <segue destination="WzU-yH-lzm" kind="show" id="8hd-X6-fxW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-K0-9u0">
+                                        <rect key="frame" x="0.0" y="304.33333333333331" width="350" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Show Map"/>
+                                        <connections>
+                                            <action selector="showmapClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXt-zf-G8B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JNq-pN-lpj" secondAttribute="trailing" constant="20" id="7f9-ur-0Fi"/>
+                            <constraint firstItem="JNq-pN-lpj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PBz-8R-75b"/>
+                            <constraint firstItem="JNq-pN-lpj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="dcY-I3-hzR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zVQ-35-2c1"/>
+                    <connections>
+                        <outlet property="infoL" destination="ihs-7a-DCT" id="RAD-2n-Z55"/>
+                        <outlet property="startB" destination="XeS-LR-hqX" id="ve0-Lk-m2C"/>
+                        <outlet property="stopB" destination="nXf-xb-Mfu" id="HZg-Fi-mkd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266.1538461538462" y="-27.014218009478672"/>
+        </scene>
+        <!--Geo CoderVC-->
+        <scene sceneID="vgJ-2u-DX3">
+            <objects>
+                <viewController id="WzU-yH-lzm" customClass="GeoCoderVC" customModule="LocationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eYd-8v-Kdh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Coi-tz-fcl">
+                                <rect key="frame" x="10" y="97.333333333333314" width="370" height="592.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeoCoding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgO-Np-JDY">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="32"/>
+                                        <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lattitude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6EB-P4-LA3">
+                                        <rect key="frame" x="0.0" y="67.000000000000014" width="370" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitutude" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOO-xf-X9L">
+                                        <rect key="frame" x="0.0" y="136" width="370" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-EC-9gK">
+                                        <rect key="frame" x="0.0" y="205" width="370" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Street Address" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-oo-rnj">
+                                        <rect key="frame" x="0.0" y="260.33333333333337" width="370" height="200"/>
+                                        <color key="backgroundColor" red="0.91535230499999998" green="0.86766137269999999" blue="0.99953407049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.77543555389999996" green="0.99953407049999998" blue="0.81441743700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="n1g-5w-2LO"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzW-2L-1kW">
+                                        <rect key="frame" x="0.0" y="495.33333333333331" width="370" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="CONVERT"/>
+                                        <connections>
+                                            <action selector="convertClicked:" destination="WzU-yH-lzm" eventType="touchUpInside" id="TlQ-pY-NkN"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwa-oK-ST0">
+                                        <rect key="frame" x="0.0" y="564.66666666666663" width="370" height="28"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cZj-ni-Wad"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cZj-ni-Wad" firstAttribute="trailing" secondItem="Coi-tz-fcl" secondAttribute="trailing" constant="10" id="2fx-cc-4o9"/>
+                            <constraint firstItem="Coi-tz-fcl" firstAttribute="centerY" secondItem="eYd-8v-Kdh" secondAttribute="centerY" id="Kv0-4j-pY7"/>
+                            <constraint firstItem="Coi-tz-fcl" firstAttribute="leading" secondItem="cZj-ni-Wad" secondAttribute="leading" constant="10" id="sIJ-60-xej"/>
+                            <constraint firstItem="Coi-tz-fcl" firstAttribute="centerX" secondItem="eYd-8v-Kdh" secondAttribute="centerX" id="xeb-uH-A05"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Ts-QP-QCc"/>
+                    <connections>
+                        <outlet property="addrT" destination="3ug-oo-rnj" id="Pvv-Nh-scE"/>
+                        <outlet property="latL" destination="6EB-P4-LA3" id="T73-PW-Qb8"/>
+                        <outlet property="longL" destination="rOO-xf-X9L" id="sn9-vv-ZOd"/>
+                        <outlet property="resultL" destination="Cwa-oK-ST0" id="39g-MS-2ID"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnU-I3-hcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2069.2307692307691" y="-27.014218009478672"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
