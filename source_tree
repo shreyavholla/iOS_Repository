@@ -1,0 +1,18 @@
+// source tree and bitbucket code setup
+
+ 328  ls
+  329  mkdir testCloudCheckout
+  330  cd testCloudCheckout
+  331  cler
+  332  clear
+  333  git clone ssh://git@stash.synchronoss.net:7999/vzioscloud/client.git
+  334  cd ~/.ssh
+  335  ls
+  336  rm -r id_ed25519
+  337  rm -r id_ed25519.pub
+  338  ssh-keygen -t ed25519 -C "svho0001@synchronoss.com"
+  339  ls
+  340  pbcopy < ~/.ssh/id_ed25519.pub
+  341  cd ~/Desktop/testCloudCheckout
+  342  ls
+  343  git clone ssh://git@stash.synchronoss.net:7999/vzioscloud/client.git
